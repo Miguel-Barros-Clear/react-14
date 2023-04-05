@@ -1,5 +1,5 @@
 import React from "react";
-import Filho from "./filho";
+import { childrenWithProps } from "./utils/utils";
 
 export default function Pai(props) {
   return (
@@ -8,11 +8,7 @@ export default function Pai(props) {
         {props.nome} {props.sobrenome}
       </h1>
       <h2>Filhos</h2>
-      <ul>
-        <Filho nome="Pedro" sobrenome={props.sobrenome} />
-        <Filho {...props} />
-        <Filho {...props} nome="Carla" />
-      </ul>
+      <ul>{childrenWithProps(props)}</ul>
     </div>
   );
 }
