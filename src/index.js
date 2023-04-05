@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Bomdia from "./components/bomdia";
+import { BoaTarde, BoaNoite } from "./components/multiplos";
 
 
 ReactDOM.render(
-    <Bomdia nome="Guilherme" />,
+    <div>
+        <BoaTarde nome="Ana" />
+        <BoaNoite nome="Bia" />
+    </div>,
     document.getElementById('root')
 )
