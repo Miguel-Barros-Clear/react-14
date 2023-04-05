@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const elemento = <h1>React 14</h1>
+import Primeiro from "./components/primeiro";
+
 
 ReactDOM.render(
-    elemento,
+    <Primeiro />,
     document.getElementById('root')
 )
